@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>41_19501721_NguyenHoangMy_DHKHMT16B_NHOM3_KTCK</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-xs-12">
+            <img src="IMG/HEADER.PNG" alt="HEADER">
+        </div>
+        <div id="col-xs-12">
+            <nav class="navbar navbar-expand-sm justify-content-left">
+                <ul class="navbar nav">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" style="margin-right:20px;" id="btn1">Đăng nhập</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" id="btn2">Đăng kí</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!------------------------ Danh Sách ---------------------------->
+        <div class="col-xs-12">
+            <p style="text-align: center; font-size: 30px;">DANH SÁCH ĐỘI TUYỂN VIỆT NAM</p>
+            <table class="table table-striped" role="table" id="danhsach">
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th>Số áo</th>
+                    <th>Câu lạc bộ</th>
+                    <th>Ngày tập trung</th>
+                    <th>Điện thoại</th>
+                    <th>Ảnh đại diện</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="col-xs-12">
+            <i><p style="text-align: center;">Mã sinh viên: 19501721_Nguyễn Hoàng Mỹ Lớp:DHKHMT16B</p></i>
+        </div>
+    </footer>
+    <!--Modal-->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100">THÔNG TIN CÁ NHÂN</h4>
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <from action="" id="frm1">
+                        <div class="form-group form-row">
+                            <label class="col-lg-4" for="Name">Họ tên</label>
+                            <div class="col-lg-8">
+                                <input type="text" id="Name" class="form-control " placeholder="Nhập họ tên">
+                                <span id="tbName" class="text-danger font-italic ">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group form-row ">
+                            <label class="col-lg-4 " for="Ao">Số áo</label>
+                            <div class="col-lg-8 ">
+                                <input type="text" id="Ao" class="form-control " placeholder="Nhập số áo đội tuyển">
+                                <span id="tbAo" class="text-danger font-italic">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group form-row ">
+                            <label class="col-lg-4 " for="Clb">Câu lạc bộ</label>
+                            <div class="col-lg-8 ">
+                                <input type="text" id="Clb" class="form-control " placeholder="Câu lạc bộ của bạn">
+                                <span id="tbClb" class="text-danger font-italic ">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group form-row ">
+                            <label class="col-lg-4 " for="NTT">Ngày tập trung</label>
+                            <div class="col-lg-8 ">
+                                <input type="date" id="NTT" class="form-control ">
+                                <span id="tbNTT" class="text-danger font-italic ">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group form-row ">
+                            <label class="col-lg-4 " for="SDT">Số điện thoại</label>
+                            <div class="col-lg-8 ">
+                                <input type="tel" id="SDT" class="form-control " placeholder="0xx-xxx-xxxx">
+                                <span id="tbSDT" class="text-danger font-italic ">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group form-row ">
+                            <label class="col-lg-4 " for="Anh">Ảnh đại diện</label>
+                            <div class="col-lg-8 ">
+                                <input type="file" id="Anh" class="form-control">
+                                <span id="tbAnh" class="text-danger font-italic ">*</span>
+                            </div>
+                        </div>
+                        <button id="Save" type="button " class="btn btn-success btn-block ">Lưu</button>
+                    </from>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
